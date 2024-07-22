@@ -21,7 +21,7 @@ repos:
     rev: v2.3.0
     hooks:
       - id: codespell
-        args: ["--ignore-words", ".codespell-ignore"]
+        args: ["--ignore-words-list=gis,timeseries", "--skip=*.json,*.csv"]
 
   - repo: https://github.com/kynan/nbstripout
     rev: 0.7.1
