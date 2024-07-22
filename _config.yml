@@ -31,6 +31,8 @@ launch_buttons:
   colab_url: "https://colab.research.google.com"
   notebook_interface: "jupyterlab"
   binderhub_url: "https://mybinder.org"
+  thebe: true
+  branch: main
 
 # Information about where the book exists on the web
 repository:
@@ -46,9 +48,8 @@ html:
   use_repository_button: true
   use_issues_button: true
   use_edit_page_button: true
-  use_download_button: true
-  # thebe: true
-  # google_analytics_id: G-XXXXXXX
+  use_download_button: true # google_analytics_id: G-XXXXXXX
+  thebe: true # Enable Thebe
 
 sphinx:
   config:
@@ -56,6 +57,7 @@ sphinx:
     html_theme_options:
       use_download_button: true
       repository_url: https://github.com/giswqs/jupyter-book-demo
+      repository_branch: main # Specify the correct branch for theme options
       use_issues_button: true
       use_repository_button: true
       use_edit_page_button: true
