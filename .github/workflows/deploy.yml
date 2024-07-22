@@ -4,11 +4,11 @@ on:
   # Trigger the workflow on push to main branch
   push:
     branches:
-      - master
+      - main
 
 # This job installs dependencies, build the book, and pushes it to `gh-pages`
 jobs:
-  build-and-deploy-book:
+  build-book:
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
