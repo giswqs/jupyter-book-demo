@@ -1,14 +1,13 @@
-name: deploy
+name: build
 
 on:
-  # Trigger the workflow on push to main branch
-  push:
+  pull_request:
     branches:
       - master
 
 # This job installs dependencies, build the book, and pushes it to `gh-pages`
 jobs:
-  build-and-deploy-book:
+  build-the-book:
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
@@ -30,10 +29,3 @@ jobs:
       - name: Build the book
         run: |
           jupyter-book build .
-
-      # Deploy the book's HTML to gh-pages branch
-      - name: GitHub Pages action
-        uses: peaceiris/actions-gh-pages@v4
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./_build/html
