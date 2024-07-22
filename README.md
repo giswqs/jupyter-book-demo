@@ -1,6 +1,6 @@
 # Jupyter Book Demo
 
-This is a Jupytebook demo
+This is a Jupyter book demo
 
 ## Usage
 
@@ -11,8 +11,8 @@ If you'd like to develop and/or build the Jupyter Book Demo book, you should:
 1. Clone this repository
 2. Run `pip install -r requirements.txt` (it is recommended you do this within a virtual environment)
 3. (Optional) Edit the books source files located in the `jupyter-book-demo/` directory
-4. Run `jupyter-book clean jupyter-book-demo/` to remove any existing builds
-5. Run `jupyter-book build jupyter-book-demo/`
+4. Run `jupyter-book clean .` to remove any existing builds
+5. Run `jupyter-book build .` to build the book
 
 A fully-rendered HTML version of the book will be built in `jupyter-book-demo/_build/html/`.
 
