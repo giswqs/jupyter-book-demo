@@ -5,8 +5,8 @@ jupytext:
     format_name: myst
     format_version: 0.13
     jupytext_version: 1.18.1
-title: Introduction to Open Publishing
-subtitle: Using Jupyter Book for Open Publishing
+title: How to Write and Publish a Book
+subtitle: Using Jupyter Book to Write and Publish a Book
 authors:
   - name: Qiusheng Wu
     affiliations:
@@ -15,7 +15,7 @@ authors:
     email: qwu18@utk.edu
 license: CC-BY-4.0
 abstract: |
-  This tutorial introduces open publishing techniques using Jupyter Book and demonstrates how to effectively publish your research.
+  This tutorial introduces how to write and publish a book using Jupyter Book.
 exports:
   - format: docx
   - format: pdf
@@ -23,7 +23,7 @@ exports:
     template: lapreprint-typst
 ---
 
-# Introduction to Open Publishing
+# How to Write and Publish a Book
 
 Whether you write your book's content in Jupyter Notebooks (`.ipynb`) or
 in regular markdown files (`.md`), you'll write in the same flavor of markdown
