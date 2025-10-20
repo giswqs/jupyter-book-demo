@@ -55,74 +55,48 @@ uv pip install -r requirements.txt
 
 ```bash
 uv run jupyter-book build .
-```
-
-#### Your First MyST Project
-
-```bash
-# Clone starter template
-git clone https://github.com/jupyter-book/mystmd-quickstart.git
-cd mystmd-quickstart
-
-# Start the MyST server
-myst start
-```
-
-#### Core MyST Commands
-
-```bash
-# Initialize a new project
-myst init
-
-# Start the preview server (with execution)
-myst start --execute
-
-# Clean build files
-myst clean
-myst clean --all
-myst clean --templates --cache
-```
-
-### Basic Document Structure
-
-#### Project Configuration
-
-Edit `myst.yml`:
-
-```yaml
-# See docs at: https://mystmd.org/guide/frontmatter
-version: 1
-project:
-  id: ab440adc-2db2-4534-8548-ad2b03879434
-  title: Introduction to GIS Programming
-  github: https://github.com/jupyter-book/mystmd-quickstart
-site:
-  template: book-theme
-  options:
-    favicon: images/favicon.ico
-    logo: images/logo.png
+uv run myst build --typst --pdf --docx
 ```
 
 #### Page Frontmatter
 
 ```yaml
 ---
-title: Introduction to GIS Programming
-subtitle: Using Python for GIS Applications
+jupytext:
+  text_representation:
+    extension: .md
+    format_name: myst
+    format_version: 0.13
+    jupytext_version: 1.18.1
+title: Introduction to Open Publishing
+subtitle: Using Jupyter Book for Open Publishing
 authors:
-  - name: Your Name
+  - name: Qiusheng Wu
     affiliations:
-      - Your University
-    orcid: 0000-0000-0000-0000
-    email: your.email@example.com
+      - University of Tennessee
+    orcid: 0000-0001-5437-4073
+    email: qwu18@utk.edu
 license: CC-BY-4.0
-keywords: GIS, python, geospatial, mapping
 abstract: |
-  This tutorial introduces geospatial analysis techniques using Python libraries and demonstrates how to effectively visualize and analyze geographic data.
-kernelspec:
-  name: python3
-  display_name: Python 3
+  This tutorial introduces open publishing techniques using Jupyter Book and demonstrates how to effectively publish your research.
+exports:
+  - format: docx
+  - format: pdf
+  - format: typst
+    template: lapreprint-typst
 ---
+```
+
+#### Removing Margin
+
+Open `_build/templates/typst/myst/lapreprint-typst/lapreprint.typ` in your text editor and remove the following lines:
+
+- Line 83, change ` margin: (left: 25%)` to ` margin: (left: 1in)`
+- On Lines 253-254, comment out the following lines:
+
+```text
+//               text(size: 7pt, fill: theme, weight: weight, d.title),
+//               text(size: 7pt, d.date.display("[month repr:short] [day], [year]"))
 ```
 
 #### Adding Citations
