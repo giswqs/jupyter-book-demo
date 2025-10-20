@@ -44,10 +44,17 @@ source .venv/bin/activate
 .venv\Scripts\activate
 ```
 
-To install dependencies, run the following command:
+To install dependencies, run the following commands:
 
 ```bash
-uv run pip install -r requirements.txt
+uv pip install pip
+uv pip install -r requirements.txt
+```
+
+#### Building the book
+
+```bash
+uv run jupyter-book build .
 ```
 
 #### Your First MyST Project
