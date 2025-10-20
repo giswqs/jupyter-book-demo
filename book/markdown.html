@@ -394,6 +394,7 @@ document.write(`
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-are-roles-and-directives">What are roles and directives?</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#using-a-directive">Using a directive</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#using-a-role">Using a role</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#adding-a-figure">Adding a figure</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#adding-a-citation">Adding a citation</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#executing-code-in-your-markdown-files">Executing code in your markdown files</a></li>
 </ul>
@@ -473,6 +474,26 @@ the <code class="docutils literal notranslate"><span class="pre">doc</span></cod
 refer directly to another page by its relative path.</p>
 <p>For more information on writing roles, see the
 <a class="reference external" href="https://myst-parser.readthedocs.io/">MyST documentation</a>.</p>
+</section>
+<section id="adding-a-figure">
+<h3>Adding a figure<a class="headerlink" href="#adding-a-figure" title="Link to this heading">#</a></h3>
+<p>You can also add figures to your book.</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>:::{figure} https://assets.gishub.org/images/book-cover.png
+:label: gispro-book-cover
+:alt: GISPro Book Cover
+:align: center
+:width: 100%
+
+GIS Programming with Python Book Cover.
+:::
+</pre></div>
+</div>
+<figure class="align-center" id="id3">
+<img alt="GISPro Book Cover" src="https://assets.gishub.org/images/book-cover.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 2 </span><span class="caption-text">GIS Programming with Python Book Cover.</span><a class="headerlink" href="#id3" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
 </section>
 <section id="adding-a-citation">
 <h3>Adding a citation<a class="headerlink" href="#adding-a-citation" title="Link to this heading">#</a></h3>
@@ -589,6 +610,7 @@ see <a class="reference external" href="https://myst-nb.readthedocs.io/">The MyS
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-are-roles-and-directives">What are roles and directives?</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#using-a-directive">Using a directive</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#using-a-role">Using a role</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#adding-a-figure">Adding a figure</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#adding-a-citation">Adding a citation</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#executing-code-in-your-markdown-files">Executing code in your markdown files</a></li>
 </ul>
