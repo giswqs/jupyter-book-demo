@@ -94,6 +94,29 @@ refer directly to another page by its relative path.
 For more information on writing roles, see the
 [MyST documentation](https://myst-parser.readthedocs.io/).
 
+### Adding a figure
+
+You can also add figures to your book.
+
+```text
+:::{figure} https://assets.gishub.org/images/book-cover.png
+:label: gispro-book-cover
+:alt: GISPro Book Cover
+:align: center
+:width: 100%
+
+GIS Programming with Python Book Cover.
+:::
+```
+
+:::{figure} https://assets.gishub.org/images/book-cover.png
+:label: gispro-book-cover
+:alt: GISPro Book Cover
+:align: center
+
+GIS Programming with Python Book Cover.
+:::
+
 ### Adding a citation
 
 You can also cite references that are stored in a `bibtex` file. For example,
